@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUMINOUS | Innovative Design</title>
+    <link rel="stylesheet" href="/myweb/task2.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <div class="navbar__left">
+                <button class="menu-toggle">
+                    <span class="menu-icon">
+                        <span class="menu-icon__line"></span>
+                        <span class="menu-icon__line"></span>
+                    </span>
+                    <span class="menu-label">Menu</span>
+                </button>
+                <button class="search-toggle">
+                    <span class="search-icon mdi mdi-magnify"></span>
+                    <span class="search-label">Search</span>
+                </button>
+            </div>
+            <div class="navbar__logo">
+                <a href="/">LUMINOUS</a>
+            </div>
+            <div class="navbar__right">
+                <div class="navbar__actions">
+                    <button class="navbar__action">
+                        <span class="mdi mdi-account-outline"></span>
+                    </button>
+                    <button class="navbar__action">
+                        <span class="mdi mdi-heart-outline"></span>
+                    </button>
+                    <button class="navbar__action">
+                        <span class="mdi mdi-shopping-outline"></span>
+                    </button>
+                    <div class="language-selector">
+                        <button class="language-toggle">
+                            <span>EN</span>
+                            <span class="mdi mdi-chevron-down"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="drawer" id="drawer">
+        <div class="drawer__overlay" id="drawerOverlay"></div>
+        <div class="drawer__content">
+            <div class="drawer__header">
+                <div class="drawer__logo">LUMINOUS</div>
+                <button class="drawer__close" id="drawerClose">
+                    <span class="mdi mdi-close"></span>
+                </button>
+            </div>
+
+            <div class="drawer__body">
+                <div class="drawer__section">
+                    <h3 class="drawer__section-title">Navigation</h3>
+                    <a href="#" class="drawer__link">
+                        <span>
+                            <span class="mdi mdi-lamp"></span>
+                            Products
+                        </span>
+                        <span class="mdi mdi-chevron-right"></span>
+                    </a>
+                    <a href="#" class="drawer__link">
+                        <span>
+                            <span class="mdi mdi-book-open-page-variant"></span>
+                            Stories
+                        </span>
+                        <span class="mdi mdi-chevron-right"></span>
+                    </a>
+                    <a href="#" class="drawer__link">
+                        <span>
+                            <span class="mdi mdi-gift-outline"></span>
+                            Gift Guide
+                        </span>
+                        <span class="mdi mdi-chevron-right"></span>
+                    </a>
+                </div>
+
+                <div class="drawer__section">
+                    <h3 class="drawer__section-title">Company</h3>
+                    <a href="#" class="drawer__link">
+                        <span>About Us</span>
+                        <span class="mdi mdi-chevron-right"></span>
+                    </a>
+                    <a href="#" class="drawer__link">
+                        <span>Store Locator</span>
+                        <span class="mdi mdi-chevron-right"></span>
+                    </a>
+                    <a href="#" class="drawer__link">
+                        <span>Contact</span>
+                        <span class="mdi mdi-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="drawer__footer">
+                <div class="drawer__region">
+                    <span class="mdi mdi-map-marker-outline"></span>
+                    <span>Select Your Region</span>
+                </div>
+                <div class="drawer__lang-selector">
+                    <span class="mdi mdi-web"></span>
+                    <span>English</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="hero__content">
+                <div class="hero__tag animate-text">LUMINOUS PRESENTS</div>
+                <h1 class="hero__title animate-text">The Art of Light</h1>
+                <p class="hero__subtitle animate-text">
+                    Discover our latest collection where innovation meets timeless design,
+                    creating extraordinary lighting experiences.
+                </p>
+                <div class="hero__cta">
+                    <a href="#collection" class="btn-outline animate-text">Explore Collection</a>
+                </div>
+            </div>
+            <div class="hero__media">
+                <video class="hero__video" autoplay muted loop playsinline>
+                    <source src="https://cdn.example.com/videos/hero.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+
+        <section class="collection" id="collection">
+            <div class="collection__header">
+                <span class="overline animate-text">LUMINOUS PRESENTS</span>
+                <h2 class="section-title animate-text">Latest Collection</h2>
+            </div>
+            <div class="collection__grid">
+                <article class="product-card large">
+                    <div class="product-card__media">
+                        <img src="https://images.unsplash.com/photo-1544457070-4cd773b4d71e" alt="Luminous Design">
+                        <div class="product-card__overlay"></div>
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="animate-text">Aura Pendant Light</h3>
+                        <p class="animate-text">A luminous sculpture where structure becomes light</p>
+                        <a href="#" class="link-arrow animate-text">
+                            Explore Collection
+                            <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-card__media">
+                        <img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15" alt="Luminous Design">
+                        <div class="product-card__overlay"></div>
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="animate-text">Halo Series</h3>
+                        <p class="animate-text">Where art meets illumination</p>
+                        <a href="#" class="link-arrow animate-text">
+                            Discover More
+                            <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="showcase-section">
+            <div class="showcase-item">
+                <div class="showcase-item__media">
+                    <img src="https://images.unsplash.com/photo-1540932239986-30128078f3c5" alt="Aura Series">
+                    <div class="showcase-item__overlay"></div>
+                </div>
+                <div class="showcase-item__content">
+                    <span class="overline animate-text">LUMINOUS PRESENTS</span>
+                    <h2 class="section-title animate-text">Aura Series</h2>
+                    <p class="section-text animate-text">
+                        A collection of sculptural lighting that draws inspiration from celestial bodies,
+                        creating an ethereal atmosphere through the interplay of light and shadow.
+                    </p>
+                    <a href="#" class="link-arrow animate-text">
+                        Discover Collection
+                        <span class="arrow">→</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="showcase-item">
+                <div class="showcase-item__content">
+                    <span class="overline animate-text">NEW ARRIVAL</span>
+                    <h2 class="section-title animate-text">Eclipse Collection</h2>
+                    <p class="section-text animate-text">
+                        Where modern minimalism meets artistic expression. Each piece is carefully crafted
+                        to create a perfect balance between form and function.
+                    </p>
+                    <a href="#" class="link-arrow animate-text">
+                        View Collection
+                        <span class="arrow">→</span>
+                    </a>
+                </div>
+                <div class="showcase-item__media">
+                    <img src="https://images.unsplash.com/photo-1565814329452-e1efa11c5b89" alt="Eclipse Collection">
+                    <div class="showcase-item__overlay"></div>
+                </div>
+            </div>
+
+            <div class="showcase-item">
+                <div class="showcase-item__media">
+                    <img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15" alt="Nebula Series">
+                    <div class="showcase-item__overlay"></div>
+                </div>
+                <div class="showcase-item__content">
+                    <span class="overline animate-text">FEATURED</span>
+                    <h2 class="section-title animate-text">Nebula Series</h2>
+                    <p class="section-text animate-text">
+                        Inspired by the cosmic beauty of nebulae, this collection transforms spaces
+                        with its ethereal glow and organic forms.
+                    </p>
+                    <a href="#" class="link-arrow animate-text">
+                        Explore Series
+                        <span class="arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="philosophy">
+            <div class="philosophy__media">
+                <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705" alt="Design Philosophy">
+                <div class="philosophy__overlay"></div>
+            </div>
+            <div class="philosophy__content">
+                <span class="overline animate-text">OUR APPROACH</span>
+                <h2 class="section-title animate-text">Crafting Light<br>Into Art</h2>
+                <p class="section-text animate-text">
+                    Each piece is meticulously designed to transform spaces through the interplay of light and shadow,
+                    creating moments of wonder and inspiration.
+                </p>
+                <a href="#" class="btn-text animate-text">
+                    Discover Our Story
+                    <span class="arrow">→</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <script src="/myweb/task2.js"></script>
+</body>
+
+</html>
